@@ -1,24 +1,25 @@
 body
 {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    color: #444444;
-    font-size: 9pt;
-    background-color: #FAFAFA;
-
+  /* font-family: 'Helvetica', 'Arial', sans-serif; */
+  font-family: 'EB Garamond';
+  color: #444444;
+  font-size: 20pt;
+  background-color: #FAFAFA;
 }
 
 p {
-  margin: 0.5rem auto;
+  margin: 40px auto;
 }
 
 
 .main {
   position: relative;
-  width: 500px;
+  /* padding: 50px; */
+  width: 1500px;
   max-width: 100%;
   margin: auto;
   height:100vh;
-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .center {
@@ -31,14 +32,15 @@ transform: rotate(-90deg);
 }
 
 .fragment {
-  text-align: center;
-  line-height: 1rem;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 27px;
 }
 
 .footnote {
-  padding-top: 0.4rem;
+  padding-top: 5px;
+  padding-bottom: 0px;
   font-style: italic;
   color: #7c7c7c;
-  line-height: 1rem;
+  line-height: 27px;
 }
-
