@@ -1,6 +1,13 @@
 # -*- cofing: utf-8 -*-
 
-INDEX_FILE = "/Users/alex/Downloads/index.html"
+# INDEX_FILE = "/Users/alex/Downloads/index.html"
+INDEX_FILE = "/home/alex/raspi-frag-frame/index.html"
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+os.environ["NOTION_DATABASE_TYPE"] = "book fragment"
 
 import frag_frame.services.notion.client as notion_client
 from frag_frame.services.notion.parse import (
@@ -9,11 +16,6 @@ from frag_frame.services.notion.parse import (
     parse_page_book_fragment,
 )
 from frag_frame.html import format_as_html
-
-import os
-
-os.environ["NOTION_DATABASE_TYPE"] = "book fragment"
-os.environ["NOTION_DATABASE_ID"] = "e9a60798218a427cb9e351c78a360ae2"
 
 
 def _check_database_type():
