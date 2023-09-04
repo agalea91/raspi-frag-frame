@@ -1,0 +1,23 @@
+body
+{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
+    font-size: 9pt;
+    background-color: #FAFAFA;
+}
+
+.main {
+
+  width: 500px;
+  max-width: 100%;
+}
+
+.fragment {
+  text-align: center;
+  line-height: 1rem;
+}
+
+.footnote {
+  font-style: italic;
+}
+
