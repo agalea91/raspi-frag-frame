@@ -36,6 +36,7 @@ def format_as_html(book_frag: Dict[str, str]):
         <!DOCTYPE html>
         <html>
         <head>
+            <link rel="stylesheet" href="font.css">
             <link rel="stylesheet" href="style.css" />
         </head>
         <body>

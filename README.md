@@ -32,15 +32,24 @@ Run script
 python update_html.py
 ```
 
-Setup as cron job, e.g.
-
-```
-0 12 * * * python /home/alex/raspi-frag-frame/update_html.py
-```
-
 ## Start/stop kiosk
 
 ```
 sudo systemctl start kiosk.service
 sudo systemctl stop kiosk.service
+```
+
+## Cron job to swap daily
+
+Must install as root
+
+```
+>>> sudo su
+>>> crontab -e
+```
+
+Run daily at midnight EST
+
+```
+0 5 * * * /bin/bash /home/alex/raspi-frag-frame/swap_fragment.sh >> /home/alex/raspi-frag-frame/cron.log 2>&1
 ```
